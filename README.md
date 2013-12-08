@@ -17,12 +17,13 @@ The following steps will recreate the build from scratch.
 ```
 git clone https://github.com/iosdevzone/IDZBuild
 export PATH=`pwd`/IDZBuild:$PATH
-git clone https://github.com/iosdevzone/IDZPrecompileOgg
-mkdir IDZBuildRoot
+git clone https://github.com/iosdevzone/IDZPrecompiledOgg
+mkdir -p IDZBuildRoot
 export IDZ_BUILD_ROOT=`pwd`/IDZBuildRoot
-. IDZBuild/libogg_build.bash
+. IDZPrecompiledOgg/libogg_build.bash
 ```
 
 
 Licenses
 --------
+See the `LICENSE` file.
