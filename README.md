@@ -1,5 +1,5 @@
-IDZPrecompiledOgg
-=================
+# IDZPrecompiledOgg [![Build Status](https://travis-ci.org/iosdevzone/IDZPrecompiledOgg.svg?branch=master)](https://travis-ci.org/iosdevzone/IDZPrecompiledOgg)
+
 
 This is libogg 1.3.1 compiled for iOS armv7, armv7s, arm64, i386 and x86_64.
 
