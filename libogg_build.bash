@@ -1,16 +1,21 @@
+
+IDZ_OGG_VERSION=1.3.1
+IDZ_OGG_SDK_VERSION=8.0
+
 pushd $IDZ_BUILD_ROOT
-mkdir -p libogg/1.3.1
-pushd libogg/1.3.1
-svn co http://svn.xiph.org/tags/ogg/libogg-1.3.1
-pushd libogg-1.3.1
+mkdir -p libogg/$IDZ_OGG_VERSION
+pushd libogg/$IDS_OGG_VERSION
+IDZ_OGG_DIR=libogg-$IDZ_OGG_VERSION
+svn co http://svn.xiph.org/tags/ogg/$IDZ_OGG_DIR
+pushd $IDZ_OGG_DIR
 ./autogen.sh
 make distclean
 popd
-idz_configure armv7 7.0 libogg-1.3.1/configure
-idz_configure armv7s 7.0 libogg-1.3.1/configure
-idz_configure arm64 7.0 libogg-1.3.1/configure
-idz_configure i386 7.0 libogg-1.3.1/configure
-idz_configure x86_64 7.0 libogg-1.3.1/configure
+idz_configure armv7 $IDZ_OGG_SDK_VERSION $IDZ_OGG_DIR/configure
+idz_configure armv7s $IDZ_OGG_SDK_VERSION $IDZ_OGG_DIR/configure
+idz_configure arm64 $IDZ_OGG_SDK_VERSION $IDZ_OGG_DIR/configure
+idz_configure i386 $IDZ_OGG_SDK_VERSION $IDZ_OGG_DIR/configure
+idz_configure x86_64 $IDZ_OGG_SDK_VERSION $IDZ_OGG_DIR/configure
 idz_fw Ogg libogg.a install-iPhoneSimulator-i386/include/ogg
 popd
 popd
