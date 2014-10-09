@@ -1,10 +1,9 @@
-
 IDZ_OGG_VERSION=1.3.1
 IDZ_OGG_SDK_VERSION=8.0
 
 pushd $IDZ_BUILD_ROOT
 mkdir -p libogg/$IDZ_OGG_VERSION
-pushd libogg/$IDS_OGG_VERSION
+pushd libogg/$IDZ_OGG_VERSION
 IDZ_OGG_DIR=libogg-$IDZ_OGG_VERSION
 svn co http://svn.xiph.org/tags/ogg/$IDZ_OGG_DIR
 pushd $IDZ_OGG_DIR
