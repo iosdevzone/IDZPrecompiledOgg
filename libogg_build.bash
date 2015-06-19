@@ -1,5 +1,8 @@
-IDZ_OGG_VERSION=1.3.1
-IDZ_OGG_SDK_VERSION=8.0
+IDZ_OGG_VERSION=1.3.2
+
+#Update IDZ_OGG_SDK_VERSION to the version available on your mac
+#Run xcodebuild -showsdks to see the iOS version availanle on your mac
+IDZ_OGG_SDK_VERSION=8.3
 
 pushd $IDZ_BUILD_ROOT
 mkdir -p libogg/$IDZ_OGG_VERSION
