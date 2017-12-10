@@ -18,5 +18,6 @@ idz_configure arm64 $IDZ_OGG_SDK_VERSION $IDZ_OGG_DIR/configure
 idz_configure i386 $IDZ_OGG_SDK_VERSION $IDZ_OGG_DIR/configure
 idz_configure x86_64 $IDZ_OGG_SDK_VERSION $IDZ_OGG_DIR/configure
 idz_fw Ogg libogg.a install-iPhoneSimulator-i386/include/ogg
+echo "Wrote `pwd`/Ogg.framework"
 popd
 popd
